@@ -13,6 +13,8 @@ public class Configuration {
 		try {
 			Reader reader = Resources.getResourceAsReader("config/sqlMapConfig.xml");
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
+			//InputStream stream = Resources.getResourceAsStream("config/sqlMapConfig.xml");
+			//sqlSessionFactory = new SqlSessionFactoryBuilder().build(stream, "hr");   6번예제 사용
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

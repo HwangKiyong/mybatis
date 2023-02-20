@@ -1,13 +1,11 @@
-package ch05.domain;
+package ch07.domain;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class User {
 	private int userId;
 	private String userName;
 	private LocalDate regDate;
-	private List<Post> posts;
 	
 	public User(int userId, String userName, LocalDate regDate) {
 		this.userId = userId;
@@ -17,6 +15,6 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return String.format("%d %s %s %s", userId, userName, regDate, posts);
+		return String.format("%d %s %s", userId, userName, regDate);
 	}
 }
