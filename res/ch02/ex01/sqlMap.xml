@@ -5,6 +5,6 @@
 	<select id='selectUsers' resultType='user'>
 		select user_id userId, user_name userName, reg_date regDate
 		from users
-		order by user_id
+		order by user_id1
 	</select>
 </mapper>
