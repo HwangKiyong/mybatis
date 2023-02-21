@@ -7,4 +7,4 @@
 		from users
 		order by user_id
 	</select>
-</mapper>
+</mapper> 
